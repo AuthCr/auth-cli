@@ -18,7 +18,7 @@ OptionParser.parse! do |parser|
   parser.on("-h", "--help", "Show this help") { puts parser; exit }
 end
 
-api = Auth::Api.new ip, port, username, password, ssl, true
+api = Auth::Api.new ip, port, username, password, ssl, !!ENV["DEBUG"]? || false
 api.auth!
 puts "Authentication: #{api.success?}"
 if api.success? && ARGV[0]?
