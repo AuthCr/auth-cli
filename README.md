@@ -1,14 +1,14 @@
 # auth-cli
 
-TODO: Write a description here
+A simple client for [auth-server](https://github.com/AuthCr/auth-server), that implement [auth-api](https://github.com/AuthCr/auth-api)
 
 ## Installation
 
-TODO: Write installation instructions here
+    make
 
 ## Usage
 
-TODO: Write usage instructions here
+    api-cli --help
 
 ## Development
 
@@ -16,7 +16,7 @@ TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it ( https://github.com/Nephos/auth-cli/fork )
+1. Fork it ( https://github.com/AuthCr/auth-cli/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)

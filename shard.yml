@@ -10,7 +10,7 @@ targets:
 
 dependencies:
   auth-api:
-    github: Nephos/auth-api
+    github: AuthCr/auth-api
 
 crystal: 0.23.0+25
 
