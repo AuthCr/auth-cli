@@ -1,0 +1,17 @@
+name: auth-cli
+version: 0.1.0
+
+authors:
+  - Arthur Poulet <arthur.poulet@mailoo.org>
+
+targets:
+  auth-cli:
+    main: src/auth-cli.cr
+
+dependencies:
+  auth-api:
+    github: Nephos/auth-api
+
+crystal: 0.23.0+25
+
+license: MIT

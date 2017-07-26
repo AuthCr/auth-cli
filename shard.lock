@@ -1,0 +1,6 @@
+version: 1.0
+shards:
+  auth-api:
+    git: /home/poulet_a/Projects/Crystal/auth-api
+    commit: 7468cec600d7ad2eecc926b873d042960166ec54
+
