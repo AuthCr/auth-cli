@@ -6,7 +6,7 @@ ip = "127.0.0.1"
 port = 8999_u16
 username = "root"
 password = "toor"
-#ssl = false
+ssl = false
 
 OptionParser.parse! do |parser|
   parser.banner = "Usage: auth-cli <auth options> [path-to-check]"
@@ -14,10 +14,11 @@ OptionParser.parse! do |parser|
   parser.on("-i=IP", "--ip=IP", "Specify the network interface") { |v| ip = v }
   parser.on("-u=NAME", "--username=NAME", "Specify the login") { |v| username = v }
   parser.on("-p=PASS", "--password=PASS", "Specify the password") { |v| password = v }
+  parser.on("-s", "--secure", "Connect using ssl") { ssl = true }
   parser.on("-h", "--help", "Show this help") { puts parser; exit }
 end
 
-api = Auth::Api.new ip, port, username, password, true
+api = Auth::Api.new ip, port, username, password, ssl, true
 api.auth!
 puts "Authentication: #{api.success?}"
 if api.success? && ARGV[0]?
