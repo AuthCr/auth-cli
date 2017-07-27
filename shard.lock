@@ -2,5 +2,5 @@ version: 1.0
 shards:
   auth-api:
     github: AuthCr/auth-api
-    commit: dc2bdfc2e99421277858842f7d04683cac14f992
+    commit: 0bfe8ebab61b36638e99017fae27bf95ad8cad6e
 

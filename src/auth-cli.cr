@@ -25,3 +25,4 @@ if api.success? && ARGV[0]?
   api.has_access_to? ARGV[0]?
   puts "Has access to #{ARGV[0]?}: #{api.success?}"
 end
+api.close
