@@ -1,6 +1,6 @@
-require "./auth-cli/*"
+require "./credid-cli/*"
 require "option_parser"
-require "auth-api"
+require "credid-api"
 
 ip = "127.0.0.1"
 port = 8999_u16
@@ -18,9 +18,9 @@ OptionParser.parse! do |parser|
   parser.on("-h", "--help", "Show this help") { puts parser; exit }
 end
 
-api = Auth::Api.new ip, port, username, password, ssl, !!ENV["DEBUG"]? || false
+api = Credid::Api.new ip, port, username, password, ssl, !!ENV["DEBUG"]? || false
 api.auth!
-puts "Authentication: #{api.success?}"
+puts "Credidentication: #{api.success?}"
 if api.success? && ARGV[0]?
   api.has_access_to? ARGV[0]?
   puts "Has access to #{ARGV[0]?}: #{api.success?}"

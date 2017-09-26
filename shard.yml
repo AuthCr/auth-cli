@@ -1,17 +1,17 @@
-name: auth-cli
-version: 0.1.0
+name: cr-credid-cli
+version: 0.2.0
 
 authors:
-  - Arthur Poulet <arthur.poulet@mailoo.org>
+  - Arthur Poulet <arthur.poulet@sceptique.eu>
 
 targets:
-  auth-cli:
-    main: src/auth-cli.cr
+  credid-cli:
+    main: src/cr-credid-cli.cr
 
 dependencies:
-  auth-api:
-    github: AuthCr/auth-api
+  credid-api:
+    github: Credid/cr-credid-api
 
 crystal: 0.23.0+25
 
-license: MIT
+license: GPL3

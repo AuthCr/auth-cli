@@ -1,4 +1,4 @@
-NAME=`ls src/*/ -d | cut -f2 -d'/'`
+NAME=credid-cli
 
 all: deps_opt build
 

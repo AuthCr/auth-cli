@@ -1,6 +1,6 @@
-# auth-cli
+# credid-cli
 
-A simple client for [auth-server](https://github.com/AuthCr/auth-server), that implement [auth-api](https://github.com/AuthCr/auth-api)
+A simple client for [credid-server](https://github.com/Credid/credid-server), that implement [credid-api](https://github.com/Credid/cr-credid-api)
 
 ## Installation
 
@@ -8,7 +8,7 @@ A simple client for [auth-server](https://github.com/AuthCr/auth-server), that i
 
 ## Usage
 
-    api-cli --help
+    credid-cli --help
 
 ## Development
 
@@ -16,7 +16,7 @@ TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it ( https://github.com/AuthCr/auth-cli/fork )
+1. Fork it ( https://github.com/Credid/cr-credid-cli/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)

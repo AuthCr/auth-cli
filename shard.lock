@@ -1,6 +1,6 @@
 version: 1.0
 shards:
-  auth-api:
-    github: AuthCr/auth-api
-    commit: 0bfe8ebab61b36638e99017fae27bf95ad8cad6e
+  credid-api:
+    github: Credid/cr-credid-api
+    version: 0.2.0
 

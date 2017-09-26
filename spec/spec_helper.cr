@@ -1,2 +1,2 @@
 require "spec"
-require "../src/auth-cli"
+require "../src/cerdid-cli"

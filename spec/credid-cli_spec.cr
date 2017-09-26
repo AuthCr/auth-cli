@@ -1,6 +1,6 @@
 require "./spec_helper"
 
-describe Auth::Cli do
+describe Credid::Cli do
   # TODO: Write tests
 
   it "works" do
